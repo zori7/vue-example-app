@@ -1,0 +1,9 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "ratings": "Ratings",
+    "articles": "Articles"
+  },
+  "message": "hello i18n !!"
+}
