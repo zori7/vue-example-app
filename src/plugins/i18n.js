@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
+import * as Cookies from 'js-cookie'
 
 Vue.use(VueI18n)
 
-const savedLocale = JSON.parse(localStorage.getItem('vuex')).lang
+const savedLocale = JSON.parse(Cookies.get('vuex')).lang
 
 function loadLocaleMessages () {
     const locales = require.context('../locales', true, /[A-Za-z0-9-_,\s]+\.json$/i)
