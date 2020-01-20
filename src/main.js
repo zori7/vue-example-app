@@ -2,14 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import dayjs from './plugins/dayjs'
+import './plugins/dayjs'
+import './plugins/axios'
 import vuetify from './plugins/vuetify'
 import i18n from './plugins/i18n'
-import axios from './plugins/axios'
 
 Vue.config.productionTip = false
-Vue.prototype.$dayjs = dayjs
-Vue.prototype.$axios = axios
 
 new Vue({
     router,
